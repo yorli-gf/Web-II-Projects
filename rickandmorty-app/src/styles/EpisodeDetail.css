@@ -1,0 +1,12 @@
+.episode-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .episode-detail h2,
+  .episode-detail h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
