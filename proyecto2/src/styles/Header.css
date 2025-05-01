@@ -1,0 +1,17 @@
+.header {
+    height: 400px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/15/08/32/4338882_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+  }
+  
