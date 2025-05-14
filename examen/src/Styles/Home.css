@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    color: white;
+  }
+  
+  .home-page {
+    padding-bottom: 40px;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    color: #facc15;
+    margin-top: 10px;
+  }
+  
+  /* Contenedor dividido en dos columnas */
+  .content-wrapper {
+    display: flex;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  /* Columna izquierda */
+  .sidebar-categories {
+    width: 240px;
+  }
+  
+  .sidebar-categories h2 {
+    margin-bottom: 20px;
+  }
+  
+  .category-list-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .category-item-vertical {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .category-item-vertical.active,
+  .category-item-vertical:hover {
+    background-color: #facc15;
+    color: black;
+  }
+  
+  .category-item-vertical img {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
+  /* Columna derecha */
+  .main-recipes {
+    flex: 1;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    background-color: #1e293b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  .sort-by {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .sort-by label {
+    font-size: 0.9rem;
+  }
+  
+  .sort-by select {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1e293b;
+    color: white;
+  }
+  
+  .meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  
+  .meal-card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .meal-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .meal-card p {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive: stack everything */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebar-categories {
+      width: 100%;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  
+  
+  
+  
