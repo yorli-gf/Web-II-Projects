@@ -35,7 +35,6 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      {/* Imagen grande */}
       <div className="hero">
         <img src="/hero.jpg" alt="Hero" />
         <div className="hero-text">
@@ -44,9 +43,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contenedor principal dividido */}
+
       <div className="content-wrapper">
-        {/* Columna izquierda: categorías */}
+
         <aside className="sidebar-categories">
           <h2>Categories</h2>
           <div className="category-list-vertical">
@@ -63,7 +62,7 @@ export default function Home() {
           </div>
         </aside>
 
-        {/* Columna derecha: búsqueda y platillos */}
+
         <section className="main-recipes">
           <div className="search-bar">
             <input
